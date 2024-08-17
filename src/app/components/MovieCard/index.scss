@@ -1,0 +1,42 @@
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    padding: 0;
+    list-style: none; 
+}
+.movie-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.movie-card:hover {
+    transform: scale(1.05); 
+}
+
+.movie-post img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.movie-info {
+    padding: 16px;
+    text-align: center;
+}
+
+.movie-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.movie-year {
+    color: #777;
+    font-size: 1rem;
+}
